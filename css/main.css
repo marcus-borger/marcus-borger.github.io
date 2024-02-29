@@ -33,7 +33,7 @@
 	--clr-primary-2: #0477b5;
 	--clr-primary-3: #53a6d3;
 	--clr-secondary: #ebebeb;
-	--clr-tertiary: #3f3f3f;
+	--clr-tertiary: #0e1214;
 	--clr-font: #e3e3e3;
 	--clr-font-2: #ececec;
 	--clr-font-3: #fafafa;
@@ -1423,7 +1423,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #about {
-	background: var(--clr-tertiary);
+	background: linear-gradient(45deg, var(--clr-tertiary), transparent);
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 }
