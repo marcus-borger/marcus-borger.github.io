@@ -397,6 +397,11 @@ textarea {
 	margin: 0 auto;
 }
 
+header .row {
+	width: 100%;
+	max-width: none;
+}
+
 .row:before,
 .row:after {
 	content: "";
