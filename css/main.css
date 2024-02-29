@@ -1735,6 +1735,7 @@ header .logo a {
 	position: relative;
 	overflow: hidden;
 	max-height: 550px;
+	padding: 10px;
 }
 #portfolio .folio-item img {
 	vertical-align: middle;
