@@ -37,6 +37,7 @@
 	--clr-font: #e3e3e3;
 	--clr-font-2: #ececec;
 	--clr-font-3: #fafafa;
+	--clr-font-4: #ffffff;
  }
 
 /** 
@@ -92,7 +93,7 @@ body {
  * -------------------------------------------------------------------
  */
 a, a:visited {
-	color: #000000;
+	color: var(--clr-font-4);
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
