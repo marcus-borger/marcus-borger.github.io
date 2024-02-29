@@ -705,7 +705,7 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-	background: var(--clr-font-2);
+	background: var(--clr-primary-2);
 	color: #FFFFFF;
 }
 .button.button-primary:hover,
@@ -719,7 +719,7 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-	background: #1f1f1f;
+	background: var(--clr-primary);
 }
 button.full-width, .button.full-width {
 	width: 100%;
