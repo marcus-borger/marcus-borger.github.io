@@ -31,6 +31,7 @@
  :root {
 	--clr-primary: #0b86c8;
 	--clr-primary-2: #0477b5;
+	--clr-primary-3: #53a6d3;
 	--clr-secondary: #ebebeb;
 	--clr-tertiary: #3f3f3f;
 	--clr-font: #e3e3e3;
@@ -1486,7 +1487,8 @@ header .logo a {
 	grid-template-columns: repeat(4,1fr);
 	justify-content: center;
 	justify-items: center;
-	gap: 20px;
+	gap: 60px;
+	color: var(--clr-primary-3);
 }
 
 .button-section {
