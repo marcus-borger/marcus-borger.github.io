@@ -1581,7 +1581,7 @@ header .logo a {
 	display: block;
 	width: 1px;
 	height: 100%;
-	background: var(--clr-primary)
+	background: var(--clr-primary);
 	position: absolute;
 	left: 35%;
 	top: 0;
