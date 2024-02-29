@@ -1512,6 +1512,7 @@ header .logo a {
 }
 .intro-info .lead {
 	text-align: left;
+	padding-inline: 5rem;
 }
 
 .about-content {
