@@ -1477,6 +1477,10 @@ header .logo a {
 	grid-template-columns: repeat(4,1fr);
 }
 
+.about-content .skills-grid i {
+	font-size: 3.5rem;
+}
+
 .button-section {
 	text-align: center;
 }
