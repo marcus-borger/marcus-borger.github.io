@@ -28,6 +28,10 @@
  * =================================================================== 
  */
 
+ :root {
+	--clr-primary: #0b86c8;
+	--clr-secondary: #ebebeb;
+ }
 
 /** 
  * ===================================================================
@@ -594,7 +598,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-	color: #cc005f;
+	color: var(--clr-primary);
 	border-bottom: 1px solid #FF0077;
 }
 label, legend {
@@ -942,7 +946,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 .grey-section {
-	background: #ebebeb;
+	background: var(--clr-secondary);
 }
 .grey-section p.lead {
 	color: #7d7d7d;
@@ -1259,7 +1263,7 @@ header .logo a {
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .intro-content h5 {
-	color: #cc005f;
+	color: var(--clr-primary);
 	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
@@ -1306,7 +1310,7 @@ header .logo a {
 	letter-spacing: .25rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	border-color: #cc005f;
+	border-color: var(--clr-primary);
 }
 .intro-content .button::after {
 	display: inline-block;
@@ -1338,7 +1342,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-	color: #cc005f;
+	color: var(--clr-primary);
 }
 
 /**
@@ -1883,7 +1887,7 @@ header .logo a {
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 .popup-modal .link-box a:hover {
-	background: #cc005f;
+	background: var(--clr-primary);
 	border: none;
 }
 @media only screen and (max-width:600px) {
@@ -2293,7 +2297,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-	background: #cc005f;
+	background: var(--clr-primary);
 }
 #message-warning, #message-success {
 	display: none;
@@ -2505,7 +2509,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: #cc005f;
+	background: var(--clr-primary);
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
