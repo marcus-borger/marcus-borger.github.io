@@ -1726,11 +1726,23 @@ header .logo a {
  */
 #portfolio {
 	--item-size: 150px;
-	--item-count: 6;
+	--item-count: 3;
 
 	background: var(--clr-tertiary);
 	padding-top: 12rem;
 	padding-bottom: 12rem;
+}
+
+@media screen and (min-width: 768px) {
+	#portfolio {
+		--item-count: 4;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#portfolio {
+		--item-count: 6;
+	}
 }
 
 .portfolio-grid {
@@ -1770,8 +1782,28 @@ header .logo a {
 	animation: zIndexHack .3s;
 }
 
-.portfolio-item:nth-child(5n - 1) { 
-	grid-column: 2 / span 2 
+.portfolio-item:nth-child(2n) { 
+	grid-column: 2 / span 2;
+}
+
+@media screen and (min-width: 768px) {
+	.portfolio-item:nth-child(2n) { 
+		grid-column: auto / span 2; 
+	}
+
+	.portfolio-item:nth-child(3n) { 
+		grid-column: 2 / span 2; 
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.portfolio-item:nth-child(3n) { 
+		grid-column: auto / span 2; 
+	}
+
+	.portfolio-item:nth-child(5n - 1) { 
+		grid-column: 2 / span 2;
+	}
 }
 
 .portfolio-item-image {
