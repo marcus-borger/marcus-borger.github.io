@@ -1725,7 +1725,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #portfolio {
-	--item-size: 100px;
+	--item-size: 150px;
 	--item-count: 6;
 
 	background: var(--clr-tertiary);
@@ -1734,23 +1734,32 @@ header .logo a {
 }
 
 .portfolio-grid {
+	--gap: 5px;
+
 	display: grid;
 	grid-template-columns: repeat(var(--item-count), var(--item-size));
 	grid-auto-rows: var(--item-size);
 	margin-bottom: var(--item-size);
 	place-items: start center;
-	gap: 5px;
+	gap: var(--gap);
+	width: calc(var(--item-count) * var(--item-size) + ((var(--item-count) - 1) * var(--gap)));
+	margin-inline: auto;
 }
 
 .portfolio-item {
+	--clip-path: "M 120 30 C 150 0 150 0 180 30 C 210 60 240 90 270 120 C 300 150 300 150 270 180 C 240 210 210 240 180 270 C 150 300 150 300 120 270 C 90 240 60 210 30 180 C 0 150 0 150 30 120 Z";
+
 	object-fit: cover;
 	width: calc(var(--item-size) * 2);
 	height: calc(var(--item-size) * 2);
-	clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
+	clip-path: path(var(--clip-path));
 	grid-column: auto / span 2;
     border-radius: 5px;
-
 }
+
+.portfolio-item:nth-child(5n - 1) { 
+	grid-column: 2 / span 2 
+  }
 
 /** 
  * ===================================================================
