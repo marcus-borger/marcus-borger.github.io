@@ -1771,6 +1771,7 @@ header .logo a {
 	clip-path: path(var(--clip-path));
 	grid-column: auto / span 2;
 	transition: clip-path .3s ease, filter .7s ease;
+	position: relative;
 }
 
 .portfolio-item:hover {
@@ -1811,13 +1812,42 @@ header .logo a {
 	height: 100%;
 	object-fit: cover;
 	border-radius: 15px;
-  }
+}
 
-  @keyframes zIndexHack {
+@keyframes zIndexHack {
 	0%, 100% {
 		z-index: 1;
 	}
-  }
+}
+
+.portfolio-item-info {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	text-align: center;
+	opacity: 0;
+	transition: opacity .3s ease;
+	padding-inline: 20px;
+	color: var(--clr-font-3);
+    background: linear-gradient(0deg, transparent 0%, #0009 50%, transparent 100%);
+}
+
+.portfolio-item:hover .portfolio-item-info {
+	opacity: 1;
+}
+
+.portfolio-item-title {
+	font-size: clamp(24px, 3vw, 34px);
+	font-weight: bold;
+}
+
+.portfolio-item-involvment {
+	font-size: clamp(18px, 2.5vw, 28px);
+}
 
 /** 
  * ===================================================================
