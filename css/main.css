@@ -1834,6 +1834,7 @@ header .logo a {
 	padding-inline: 20px;
 	color: var(--clr-font-3);
     background: linear-gradient(0deg, transparent 0%, #0009 50%, transparent 100%);
+	text-shadow: 2px 2px 11px black;
 }
 
 .portfolio-item:hover .portfolio-item-info {
